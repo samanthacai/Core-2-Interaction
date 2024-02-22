@@ -1,0 +1,139 @@
+.module {
+  background-image: url(images/gradient-2.jpg);
+}
+
+#scroll-text {
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    color: #FEEECD;
+    font-size: 20px;
+    text-shadow : 0 0 10px #FEEECD;
+    margin: auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .left {
+    top: 50%;
+    left: 2%;
+    width: 100px;
+    position: absolute;
+    top: 50%;
+  }
+  
+  .right {
+    top: 50%;
+    left: 85%;
+    width: 100px;
+    position: absolute;
+    top: 50%;
+  }
+  
+  button {
+    background-color: transparent;
+    border: transparent;
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    color: #FEEECD;
+    background-color: ;
+    margin: 0;
+    position: absolute;
+    top: 10%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-shadow : 0 0 10px #FEEECD;
+  }
+  
+  .left {
+    animation: floatAnimation1 3s infinite alternate ease-in-out;
+  }
+  
+  .right {
+    animation: floatAnimation2 4s infinite alternate ease-in-out;
+  }
+  
+  @keyframes floatAnimation1 {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(50px);
+    }
+  }
+  
+  @keyframes floatAnimation2 {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(50px);
+    }
+  }
+  
+  @font-face {
+    font-family: 'Candy Darling';
+    src: url('fonts/CandyDarling-Regular-Trial.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Director';
+    src: url('fonts/DM Sans/.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'DM Sans';
+    src: url('fonts/Director-Regular/DMSans_36pt-Regular.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
+  
+
+#scroll-container {
+    height: 100%;
+  }
+  
+  #scroll-text {
+    height: 100%;
+    text-align: center;
+    
+    /* animation properties */
+    -moz-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    
+    -moz-animation: my-animation 30s linear infinite;
+    -webkit-animation: my-animation 30s linear infinite;
+    animation: my-animation 30s linear infinite;
+  }
+  
+  /* for Firefox */
+  @-moz-keyframes my-animation {
+    from { -moz-transform: translateY(100%); }
+    to { -moz-transform: translateY(-100%); }
+  }
+  
+  /* for Chrome */
+  @-webkit-keyframes my-animation {
+    from { -webkit-transform: translateY(100%); }
+    to { -webkit-transform: translateY(-100%); }
+  }
+  
+  @keyframes my-animation {
+    from {
+      -moz-transform: translateY(100%);
+      -webkit-transform: translateY(100%);
+      transform: translateY(100%);
+    }
+    to {
+      -moz-transform: translateY(-100%);
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%);
+    }
+  }
