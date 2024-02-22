@@ -1,39 +1,106 @@
+
+.module {
+  background-image: url(images/gradient-6.jpg);
+}
+
+* {
+  margin: 0;
+ }
+
 h1 {
-    font-family: "parabolica", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 110px;
-    color: white;
-    line-height: 100px;
-    padding: 50px;
-}
-body {
-    font-family: "parabolica", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    background-color: black;
-    font-size: 50px;
-    padding: 50px;
-}
-
-.questionaire {
-    text-align: left;
-}
-
-.story {
+    padding-top: 300px;
+    
+    color:#FEEECD;
     text-align: center;
+
+    font-family: "altesse-std-64pt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #FEEECD;
+    font-size: 150px;
+
+    text-shadow : 0 0 32px #FEEECD;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
 }
 
-.beginnings {
-    text-align: right;
+.left {
+  top: 50%;
+  left: 2%;
 }
 
-a:link {
-    color: white;
+.right {
+  top: 50%;
+  left: 90%;
 }
-a:visited {
-    color: white;
+
+button {
+  background-color: transparent;
+  border: transparent;
+  font-size: 16px;
+  font-family: 'DM Sans', sans-serif;
+  color: #FEEECD;
+  background-color: ;
+  margin: 0;
+  position: absolute;
+  top: 10%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-shadow : 0 0 10px #FEEECD;
 }
-a:hover {
-    color: #ffffff;
+
+.left {
+  animation: floatAnimation1 3s infinite alternate ease-in-out;
+}
+
+.right {
+  animation: floatAnimation2 4s infinite alternate ease-in-out;
+}
+
+@keyframes floatAnimation1 {
+  0% {
+      transform: translateY(0);
+  }
+  100% {
+      transform: translateY(50px);
+  }
+}
+
+@keyframes floatAnimation2 {
+  0% {
+      transform: translateY(0);
+  }
+  100% {
+      transform: translateY(50px);
+  }
+}
+
+p {
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    color: #FEEECD;
+    font-size: 16px;
+    text-shadow : 0 0 10px #FEEECD;
+    position: relative;
+    padding-top: 100px;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('fonts/Director-Regular/DMSans_36pt-Regular.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
+
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #FFE6B6, 0 0 40px #FFE6B6, 0 0 50px #FFE6B6, 0 0 60px #FFE6B6, 0 0 70px #FFE6B6;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #FEEECD, 0 0 40px #FEEECD, 0 0 50px #FEEECD, 0 0 60px #FEEECD, 0 0 70px #FEEECD, 0 0 80px #FEEECD;
+  }
 }
