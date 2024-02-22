@@ -1,25 +1,38 @@
 h1 {
-    font-family: "pf-pixelscript", sans-serif;
+    font-family: "parabolica", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 210px;
-    line-height: 210px;
-    padding-top: 150px;
+    font-size: 110px;
+    color: white;
+    line-height: 100px;
+    padding: 50px;
 }
 body {
-    font-family: "trilby", serif;
-    color: #015a2a;
+    font-family: "parabolica", sans-serif;
     font-weight: 400;
     font-style: normal;
-    background-color: #a4daf6;
-    margin: 50px;
+    background-color: black;
+    font-size: 50px;
+    padding: 50px;
+}
+
+.questionaire {
+    text-align: left;
+}
+
+.story {
+    text-align: center;
+}
+
+.beginnings {
+    text-align: right;
 }
 
 a:link {
-    color: #15a336;
+    color: white;
 }
 a:visited {
-    color: #15a336;
+    color: white;
 }
 a:hover {
     color: #ffffff;
