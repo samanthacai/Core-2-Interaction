@@ -1,0 +1,194 @@
+
+.module {
+    background-image: url(images/gradient-3.jpg);
+  }
+
+#scroll-text-left {
+    text-align: right;
+    font-family: 'DM Sans', sans-serif;
+    color: #FEEECD;
+    font-size: 20px;
+    text-shadow : 0 0 10px #FEEECD;
+    margin: auto;
+    width: 500px;
+    display: flex;
+    justify-content: right;
+  }
+  
+  .left {
+    top: 50%;
+    left: 2%;
+  }
+  
+  .right {
+    top: 50%;
+    left: 90%;
+  }
+
+  button {
+    background-color: transparent;
+    border: transparent;
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    color: #FEEECD;
+    background-color: ;
+    margin: 0;
+    position: absolute;
+    top: 10%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-shadow : 0 0 10px #FEEECD;
+  }
+.left {
+    animation: floatAnimation1 3s infinite alternate ease-in-out;
+}
+
+.right {
+    animation: floatAnimation2 4s infinite alternate ease-in-out;
+}
+
+@keyframes floatAnimation1 {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(50px);
+    }
+}
+
+@keyframes floatAnimation2 {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(50px);
+    }
+}
+
+  #scroll-container-left {
+    height: 100%;
+    position: relative;
+    right: 300px;
+  }
+  
+  #scroll-text-left {
+    height: 100%;
+    text-align: right;
+    animation-name: left;
+    /* animation properties */
+    -moz-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    
+    -moz-animation: left 30s linear infinite;
+    -webkit-animation: left 30s linear infinite;
+    animation: left 30s linear infinite;
+  }
+  
+  /* for Firefox */
+  @-moz-keyframes left {
+    from { -moz-transform: translateY(100%); }
+    to { -moz-transform: translateY(-100%); }
+  }
+  
+  /* for Chrome */
+  @-webkit-keyframes left {
+    from { -webkit-transform: translateY(100%); }
+    to { -webkit-transform: translateY(-100%); }
+  }
+  
+  @keyframes left {
+    from {
+      -moz-transform: translateY(100%);
+      -webkit-transform: translateY(100%);
+      transform: translateY(100%);
+    }
+    to {
+      -moz-transform: translateY(-100%);
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%);
+    }
+  }
+
+  
+
+#scroll-text-right {
+    text-align: left;
+    font-family: 'DM Sans', sans-serif;
+    color: #FEEECD;
+    font-size: 20px;
+    text-shadow : 0 0 10px #FEEECD;
+    margin: auto;
+    width: 500px;
+    display: flex;
+    justify-content: left;
+  }
+  #scroll-container-right {
+    height: 100%;
+    position: relative;
+    left: 300px;
+  }
+  
+  #scroll-text-right {
+    height: 100%;
+    text-align: left;
+    animation-name: right;
+  /* animation properties */
+  -moz-transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  
+  -moz-animation: right 20s linear infinite;
+  -webkit-animation: right 20s linear infinite;
+  animation: right 20s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes right {
+  from { -moz-transform: translateY(-100%); }
+  to { -moz-transform: translateY(100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes right {
+  from { -webkit-transform: translateY(-100%); }
+  to { -webkit-transform: translateY(100%); }
+}
+
+@keyframes right {
+  from {
+    -moz-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+  to {
+    -moz-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+}
+
+  
+  @font-face {
+    font-family: 'Candy Darling';
+    src: url('fonts/CandyDarling-Regular-Trial.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Director';
+    src: url('fonts/DM Sans/.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'DM Sans';
+    src: url('fonts/Director-Regular/DMSans_36pt-Regular.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
+  
