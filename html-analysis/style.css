@@ -2,3 +2,7 @@ body {
   background-color: #7a97ff;
   font-family: courier;
 }
+
+#screenshot {
+  width: 1000px;
+}
