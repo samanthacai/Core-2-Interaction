@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>HTML Reverse Engineering</title>
+    <style>
+      section { margin-top: 120px; }
+      #table-of-contents { margin: 80px 0; }
+      .grid-col-2 {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-column-gap: 40px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      Core 2 Interaction: Lab – &nbsp;<em>HTML Reverse Engineering</em>
+    </header>
+
+    <section id="table-of-contents">
+      <ul>
+        <li><a href="#screenshot">Screenshot ↓</a></li>
+        <li><a href="#analysis">Analysis ↓</a></li>
+        <li><a href="#questions">Questions ↓</a></li>
+      </ul>
+    </section>
+
+    <section id="screenshot">
+      <h2>Screenshot</h2>
+      <img src="afterhours.png">
+    </section>
+
+    <section id="analysis">
+      <h2>Analysis</h2>
+      <div class="grid-col-2">
+        <div>
+          <pre id="analysis--simplified-html">
+          body
+            a#main
+            div display:none
+              svg
+                symbol.fillblack#afterhours viewbox=0 0 1369 214 fill=none
+                symbol#cross viewbox=0 0 135 135 fill=none
+                symbol#arrow viewbox=0 0 35 32 fill=none
+            div#app
+              div.hidecursor z-0 relative h-full
+              div#svelte-announcer aria-live=assertive aria-atomic=true style=position:absolute left:0px top:0px clip:rect(0px,0px,0px) clip-path:inset(50%) overflow:hidden white-sapce:nowrap width:1px height:1px
+          </pre>
+        </div>
+        <div id="analysis--text">
+          <!-- TODO: <p>
+        <ul>
+          <li>a: for a link to the main content</li>
+          <li>symbols: for displaying symbols not found on keyboard</li>
+          <li>SVG: vector based graphics</li>
+          <li>viewbox: to place and size SVG files</li>
+          <li>.hidecursor: used for custom cursor and hiding over certain elements</li>
+          <li>clip-path: for boundary of SVG graphics</li>
+        </ul>
+        </p> -->
+        </div>
+      </div>
+    </section>
+
+    <section id="analysis--questions">
+      <h2>Questions</h2>
+      <ul>
+        <li>What are the Aria elements, aria-live and aria-atomic?</li>
+      </ul>
+    </section>
+
+  </body>
+	
+</html>
