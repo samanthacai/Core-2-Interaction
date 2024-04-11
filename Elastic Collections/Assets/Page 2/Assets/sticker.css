@@ -1,0 +1,91 @@
+.image-container {
+    position: relative;
+    top: 300px;
+    left: 50%;
+}
+
+.movable-image {
+    position: fixed;
+    cursor: grab;
+    width: 55px;
+    /* You can add more styling as needed, e.g., width, height, border, etc. */
+}
+.stickOn{
+    position: absolute;
+    z-index: -1;
+}
+#calendar{
+    position: absolute;
+    width: 350px;
+    rotate: 10deg;
+    top: 0;
+    left: 0px;
+}
+#envelope{
+    position: absolute;
+    width: 330px;
+    rotate: -15deg;
+    top: 0;
+    left: 50%;
+}
+#letter{
+    position: absolute;
+    width: 350px;
+    rotate: 50deg;
+    top: -30px;
+    left: 90%;
+}
+#note{
+    position: absolute;
+    width: 280px;
+    rotate: 5deg;
+    top: 350px;
+    left: 108%;
+}
+#notebook{
+    position: absolute;
+    width: 460px;
+    rotate: 10deg;
+    top: 450px;
+    left: 30%;
+}
+.text {
+    display: flex;
+    justify-content: space-between;
+    position: relative; /* Make the container a positioned parent */
+    width: 100%; /* Ensure container takes full width */
+    top: 0px;
+}
+.project-title{
+    font-family: "futura-pt", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    padding: 5px;
+    padding-top: 0px;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 0;
+    padding-left: 10px;
+}
+.top-text{
+    font-family: "futura-pt", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    width:100%;
+    text-align:right;
+    position: absolute;
+    height: 100%;
+    right: 0;
+    margin-right: 10px;
+    top: 10px;
+}
+a:hover {
+    color: green;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
