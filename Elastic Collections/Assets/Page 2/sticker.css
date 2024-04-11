@@ -1,0 +1,13 @@
+.image-container {
+    position: relative;
+    object-position: 50% 50%;
+    width: 50px;
+}
+
+.movable-image {
+    position: fixed;
+    cursor: grab;
+    width: 50px;
+    height: auto;
+    /* You can add more styling as needed, e.g., width, height, border, etc. */
+}
