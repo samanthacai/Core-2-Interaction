@@ -1,19 +1,69 @@
+@font-face {
+    font-family: AppleGaramondLight;
+    src: url(Fonts/AppleGaramond-Light.ttf);
+}
+
+@font-face {
+    font-family: AppleGaramondItalic;
+    src: url(Fonts/AppleGaramond-LightItalic.ttf);
+}
+
 h1 {
-    font-family: "parabolica", sans-serif;
+    font-family: AppleGaramondLight;
     font-weight: 400;
     font-style: normal;
     font-size: 110px;
-    color: white;
+    color: #402617;
     line-height: 100px;
-    padding: 50px;
+    padding: 0px;
+    text-align: center;
 }
 body {
-    font-family: "parabolica", sans-serif;
+    font-family: AppleGaramondLight;
     font-weight: 400;
     font-style: normal;
-    background-color: black;
+    background-color: #7B9ED6;
     font-size: 50px;
-    padding: 50px;
+    padding: 20px;
+    color: #402617;
+}
+
+.titles{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+.left{
+    display: ;
+    text-align: ;
+
+}
+
+.center{
+    display: ;
+    text-align: ;
+    top: ;
+}
+
+.right{
+    display: ;
+    text-align: ;
+}
+
+a{
+    text-decoration: none;
+    color: #402617;
+    background-color: #C1E650;
+    padding: 20px;
+    font-size: 30px;
+    border: 2px solid #402617;
+    border-radius: 50px;
+    justify-content: space-evenly;
+    margin: 30px;
 }
 
 .questionaire {
@@ -28,12 +78,25 @@ body {
     text-align: right;
 }
 
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40vh;
+    width: 100vw;
+    margin-left: -5px;
+    
+}
+
 a:link {
-    color: white;
+    color: #;
 }
 a:visited {
-    color: white;
+    color: #;
 }
 a:hover {
-    color: #ffffff;
+    color: #C1E650;
+    background-color: #402617;
 }
+
