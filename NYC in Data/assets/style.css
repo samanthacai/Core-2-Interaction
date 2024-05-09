@@ -32,10 +32,11 @@ body{
     padding-right: 850px;
     max-width: 100%;
     overflow-x: hidden;
+    font-family: TriptychTest-Roman;
 }
 
 h1{
-    font-family: TriptychRoman;
+    font-family: TriptychTest-Roman;
     font-size: 60px;
     text-align: center;
     padding-top: 18%;
@@ -62,7 +63,7 @@ h1:hover{
     color: #FFEA00;
 }
 .italic{
-    font-family: TriptychItalic;
+    font-family: TriptychTest-Italick;
 }
 
 .floating {  
@@ -107,7 +108,7 @@ h1:hover{
     font-size: 15px;
     color: black;
     transition: font-size 0.3s;
-    font-family: triptychitalic;
+    font-family: TriptychTest-Italick;
     cursor: pointer; /* Change cursor to pointer on hover */
     z-index: 0;
     background-color: white;
