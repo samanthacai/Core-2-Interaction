@@ -161,7 +161,7 @@ h1:hover{
     padding: 10px;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
-    font-family: triptychroman;
+    font-family: TriptychTest-Roman;
     font-size: ;
 }
 
@@ -228,7 +228,7 @@ h1:hover{
     position: sticky;
     : 900px;
     top: 50px;
-    font-family: triptychroman;
+    font-family: TriptychTest-Roman;
     font-size: 20px;
     padding: 10px;
     border: 1.5px solid black;
@@ -240,7 +240,7 @@ h1:hover{
     position: fixed;
     right: 20px; /* Adjust as needed */
     top: 90px; /* Adjust as needed */
-    font-family: triptychroman;
+    font-family: TriptychTest-Roman;
     font-size: 20px;
     padding: 0px;
     border: 1.5px solid #F5F5F5;
@@ -258,7 +258,7 @@ h1:hover{
     position: absolute;
     right: calc(50% - 40px); /* Center horizontally */
     top: 14900px;
-    font-family: triptychroman;
+    font-family: TriptychTest-Roman;
     font-size: 20px;
     padding: 10px;
     border: 1.5px solid #F5F5F5;
@@ -272,7 +272,7 @@ h1:hover{
 }
 
 .date{
-    font-family: triptychroman;
+    font-family: TriptychTest-Roman;
     font-size: 15px;
     text-align: center;
     margin-top: 400px;
@@ -287,7 +287,7 @@ h1:hover{
 }
 
 .year1{
-    font-family: triptychroman;
+    font-family: TriptychTest-Roman;
     font-size: 15px;
     padding: 10px;
     border: 1.5px solid black;
@@ -295,7 +295,7 @@ h1:hover{
     border-radius: 20px;
 }
 .year2{
-    font-family: triptychroman;
+    font-family: TriptychTest-Roman;
     font-size: 15px;
     padding: 10px;
     border: 1.5px solid black;
@@ -303,7 +303,7 @@ h1:hover{
     border-radius: 20px;
 }
 .year3{
-    font-family: triptychroman;
+    font-family: TriptychTest-Roman;
     font-size: 15px;
     padding: 10px;
     border: 1.5px solid black;
@@ -311,7 +311,7 @@ h1:hover{
     border-radius: 20px;
 }
 .year4{
-    font-family: triptychroman;
+    font-family: TriptychTest-Roman;
     font-size: 15px;
     padding: 10px;
     border: 1.5px solid black;
